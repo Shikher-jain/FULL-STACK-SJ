@@ -1,0 +1,43 @@
+
+label{
+    padding: .51px 12px .51px 12px;
+    background:  aqua;
+    border: 3px solid blue;
+    border-radius: 22px 2px ; 
+    color: black;  
+    line-height:25px;
+    margin:4px;
+}
+
+.lorem{ 
+overflow-y: scroll;
+overflow-x: scroll;
+height:min-content;
+width:min-content;
+}
+.A{
+    
+    background:wheat;
+    padding: 2px;
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-color:red blue;
+}
+input{
+    /* display:none */
+    margin:4px;
+    
+}
+
+#gender {
+    background: #564141;
+    color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 2px 22px ; 
+    
+}
+
+.entry {
+    color: rgb(255, 255, 255);
+    background: rgb(225, 164, 164);
+}
