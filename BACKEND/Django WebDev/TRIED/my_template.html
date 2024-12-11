@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items List</title>
+    <script>
+        // Fetch items from the Django API
+        function loadItems() {
+            fetch('/api/items/')
+                .then(response => response.json())
+                .then(data => {
+                    const list = document.getElementById('item-list');
+                    list.innerHTML = '';  // Clear the list
+                    data.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item.name;
+                        list.appendChild(li);
+                    });
+                });
+        }
+
+        // Load items when page loads
+        window.onload = loadItems;
+    </script>
+</head>
+<body>
+    <h1>Items List</h1>
+    <ul id="item-list"></ul>
+</body>
+</html>
